@@ -1,17 +1,17 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 
 body {
-    background: linear-gradient(270deg, #342650, #533641, #324e86);
-    background-size: 600% 600%;
-    font-family: 'Kanit', sans-serif;
-    -webkit-animation: AnimationName 8s ease infinite;
-    -moz-animation: AnimationName 8s ease infinite;
-    animation: AnimationName 8s ease infinite;
-	color:white;
+  background: linear-gradient(270deg, #342650, #533641, #324e86);
+  background-size: 600% 600%;
+  font-family: 'Kanit', sans-serif;
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
+  color: white;
 }
 
 
@@ -21,152 +21,168 @@ $stops: 100; //smoothness
 $time: 20s; //duration of animation
 $hue-range: 20; //of 360deg
 
-body{
-  background-color: $bg-color; 
+body {
+  background-color: $bg-color;
   -webkit-animation: colorChange $time linear 0s infinite;
-  animation: colorChange $time linear 0s infinite ;
+  animation: colorChange $time linear 0s infinite;
 }
 
-@-webkit-keyframes colorChange{
-  @for $i from 0 through $stops{
+@-webkit-keyframes colorChange {
+  @for $i from 0 through $stops {
     $old-color: adjust-hue($bg-color, (360/$stops)*$i);
     $new-color: adjust-hue($bg-color, (360/$stops)*$i + $hue-range);
+
     #{$i}% {
       background: -webkit-linear-gradient(left, $old-color, $new-color);
       background: linear-gradient(to right, $old-color, $new-color);
     }
-  } 
+  }
 }
-@keyframes colorChange{
-  @for $i from 0 through $stops{
+
+@keyframes colorChange {
+  @for $i from 0 through $stops {
     $old-color: adjust-hue($bg-color, (360/$stops)*$i);
     $new-color: adjust-hue($bg-color, (360/$stops)*$i + $hue-range);
+
     #{$i}% {
       background: linear-gradient(to right, $old-color, $new-color);
     }
-  } 
-}
-* {
-    margin: 0px;
-    padding: 0px;
+  }
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
+
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
+
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 
 }
 
 #header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
 }
 
 #date {
-    margin: 0px 15px 15px 0px;
-    width: 212px;
-    height: 11px;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 14px;
-    display: flex;
-    align-items: center;
+  margin: 0px 15px 15px 0px;
+  width: 212px;
+  height: 11px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
 }
 
 #greeting {
 
-    width: 233px;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
+  width: 233px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
 
 }
 
 #profile {
-    position: absolute;
-    border-radius: 41px;
-    width: 70px;
-    height: 70px;
-    right: 15px;
+  position: absolute;
+  border-radius: 41px;
+  width: 70px;
+  height: 70px;
+  right: 15px;
 }
 
 .box {
-    width: 150px;
-    height: 160px;
-    margin: 10px;
-    border-radius: 15px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.37);
-  
-  
-  
-  
-  
+  width: 150px;
+  height: 160px;
+  margin: 10px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.37);
 }
 
 .box-title {
-    position: relative;
-    left: 10px;
-    top: 15px;
-    font-style: bold;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-  
-  
+  position: relative;
+  left: 10px;
+  top: 15px;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
 }
 
 
 #content {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 .rep-count {
-    position: relative;
-    width: 100%;
-    height: 57px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-  
+  position: relative;
+  width: 100%;
+  height: 57px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+
 }
 
 .box-img {
-    position: relative;
-    width: 50px;
-    height: 30px;
-    top: -10px;
-    float: right;
-    /* margin-right: 15x; */
+  position: relative;
+  width: 50px;
+  height: 30px;
+  top: -10px;
+  float: right;
+  /* margin-right: 15x; */
 }
-
-
 
 
 @property --rotate {
@@ -179,4 +195,3 @@ body{
   --card-height: 65vh;
   --card-width: calc(var(--card-height) / 1.5);
 }
-
