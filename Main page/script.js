@@ -31,7 +31,6 @@ setInterval(()=>{
 //Repcount
 document.querySelectorAll('.box').forEach(element => {
   element.addEventListener('click', e => {
-    e.currentTarget.classList.toggle('box-highlight')
 
     //Reset the repcount
     document.querySelectorAll('.rep-count').forEach(i => {
