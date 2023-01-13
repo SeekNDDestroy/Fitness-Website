@@ -23,24 +23,24 @@ const analytics = getAnalytics(app);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider(app);
 
-//sign users up
-// const signupForm = document.querySelector('.signup')
-// signupForm.addEventListener('submit',(e)=>{
-//   e.preventDefault()
-//   const email = signupForm.email.value
-//   const password = signupForm.password.value
-//   createUserWithEmailAndPassword(auth,email,password)
-//   .then((cred)=>{
-//     console.log("user created:",cred.user)
-//     signupForm.reset()
-//   })
-//   .catch((err)=>{
-//     console.log(err.message)
-//   })
-// })
+// sign users up
+const signupForm = document.querySelector('.signup')
+signupForm.addEventListener('submit',(e)=>{
+  e.preventDefault()
+  const email = signupForm.email.value
+  const password = signupForm.password.value
+  createUserWithEmailAndPassword(auth,email,password)
+  .then((cred)=>{
+    console.log("user created:",cred.user)
+    signupForm.reset()
+  })
+  .catch((err)=>{
+    console.log(err.message)
+  })
+})
 
 
-login.addEventListener('click',(e)=>{
+gp.addEventListener('click',(e)=>{
   signInWithPopup(auth, provider)
   .then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.
