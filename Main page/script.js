@@ -29,12 +29,23 @@ setInterval(()=>{
 */
 
 //Repcount
-document.querySelectorAll('.box').forEach(element => {
-  element.addEventListener('click', e => {
+const hideBox =(i,n,l)=>{
+  for(let j=0;j<n;j++){
+    if(i!=j){
+      // l[j].style.display = 'none'
+      l[j].classList.toggle('hide')
+    }
+  }
+}
+const l  = document.querySelectorAll('.box');
+for(let i=0;i<l.length;i++){
+  l[i].addEventListener('click',()=>{
+    hideBox(i,l.length,l);
+    l[i].classList.toggle('box-focus')
 
-    //Reset the repcount
+    //Reset Repcount
     document.querySelectorAll('.rep-count').forEach(i => {
       i.innerHTML = 0;
     })
   })
-});
+}
