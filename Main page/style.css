@@ -129,13 +129,25 @@ body {
   right: 15px;
 }
 
-.box {
+/**.box {
   width: 150px;
   height: 160px;
   margin: 10px;
   border-radius: 15px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.37);
+}
+**/
+.box{
+width: 150px;
+height: 160px;
+margin: 10px;
+background: rgba(4, 3, 3, 0.304);
+border-radius: 20px;
+box-shadow: 0 4px 30px #f0f3fa5f;
+backdrop-filter: blur(9.9px);
+-webkit-backdrop-filter: blur(9.9px);
+border: solid rgba(255, 255, 255, 0.26);
 }
 
 .box-title {
