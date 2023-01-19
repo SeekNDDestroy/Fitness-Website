@@ -1,5 +1,11 @@
-let date = document.getElementById('date')
-let greet = document.getElementById('greeting')
+
+const date = document.getElementById('date')
+const greet = document.getElementById('greeting')
+const line = document.querySelector('.heart')
+const homeIcon = document.getElementById('home');
+const homePage = document.getElementById('content')
+const heartIcon = document.getElementById('heart');
+const heart = document.getElementById('loader');
 
 
 // Code to display the date
@@ -28,7 +34,7 @@ setInterval(()=>{
 },3600000)
 */
 
-//Repcount
+//Repcount and focus the clicked box
 const hideBox =(i,n,l)=>{
   for(let j=0;j<n;j++){
     if(i!=j){
@@ -49,3 +55,17 @@ for(let i=0;i<l.length;i++){
     })
   })
 }
+
+
+//Code to navigate to different pages
+heartIcon.addEventListener('click',()=>{
+  homePage.style.visibility = 'hidden';
+  heart.style.visibility = 'visible';
+  line.style.visibility = 'visible';
+})
+
+homeIcon.addEventListener('click',()=>{
+  content.style.visibility = 'visible'
+  heart.style.visibility = 'hidden';
+  line.style.visibility = 'hidden';
+})
