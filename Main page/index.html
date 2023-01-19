@@ -19,10 +19,11 @@
 
   <title>Get Fit</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="heart.css">
 </head>
 
 <body>
-  <div id="header">
+  <div id="header" >
     <div>
       <p id='date'>MONDAY, 19 SEPTEMBER</p>
       <p id='greeting'>Good Morning,Aniket!</p>
@@ -33,6 +34,7 @@
     </div>
   </div>
 
+  <!-- Main Content  -->
   <div id="content">
     <div class="box">
       <p class="box-title">Pushups</p>
@@ -71,30 +73,50 @@
       <p class="rep-count" id="weight">75</p>
     </div>
     <div class="box">
-      <p class="box-title">Sleep</p>
-      <div class="box-img">
-        <img src="./img/sleep.png" width="40" height="40" alt="">
-      </div>
-      <p class="rep-count">7.5</p>
-    </div>
+      <p class=$(document).ready(function() {
+    $("#home").show();
+    $("#daily__activity").hide();
+    $('#current__activity').hide();
+    $("#day__activity").hide();
+    $('#personal').hide();
+});
+
   </div>
   -->
   </div>
+
+  <!-- Navbar -->
   <div id="footer">
     <ul id="nav">
       <li class="nav-list" id="home">
         <img src="./img/home.png" width="30" height="30" alt="">
       </li>
-      <li class="nav-list" id="graph">
+      <li class="nav-list" id="graph-icon">
         <img src="./img/graph.png" width="30" height="30" alt="">
       </li>      
       <li class="nav-list" id = 'heart'>
-        <a href=""><img src="./img/heart.png" width="30" height="30" alt=""></a>
+        <img src="./img/heart.png" width="30" height="30" alt="">
       </li>
       <li class="nav-list"><img src="./img/watch.png" width="30" height="30" alt=""></li>
     </ul>
   </div>
 
+  <!-- Heart Rate Page-->
+  <div id="loader" style="visibility: hidden">
+    <svg x="0px" y="0px" viewBox="0 0 298 53.9">
+      <path class="st0" d="M297.5,41.2h-76.6c-0.5,0-0.9,0.4-1,0.8l-1.6,11.3l-3.1-32c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.3-1,0.8
+                           l-5.3,25.5l-2.3-10.9c-0.1-0.4-0.4-0.7-0.9-0.8c-0.4,0-0.8,0.2-1,0.6l-2.3,4.8h-107c0,0,0,0,0,0H82c-1.6,0-2.2,1.1-2.2,1.6
+                           l-1.6,11.3l-3.1-52c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.3-1,0.8l-9.3,45.5l-2.3-10.9c-0.1-0.4-0.4-0.7-0.9-0.8c-0.4,0-0.8,0.2-1,0.6
+                           l-2.3,4.8H0.5"/>
+    </svg>
+  </div>
+    <section class="heart" style="visibility: hidden"></section>
+
+    <div id="graph" style="visibility: hidden">
+      <div class="box">
+
+      </div>
+    </div>
   <script src='script.js'></script>
 </body>
 
