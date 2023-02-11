@@ -19,19 +19,21 @@
 
 <body>
     <div class="login-wrap">
+        <form class="signup">
         <div class="login-html">
             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign
                 In</label>
             <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            
             <div class="login-form">
-                <div class="sign-in-htm">
+                <div class="sign-in-htm signin">
                     <div class="group">
-                        <label for="user" class="label">Username</label>
-                        <input id="user" type="text" class="input">
+                        <label for="user" class="label">Email</label>
+                        <input id="user" type="email" class="input" name="email">
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Password</label>
-                        <input id="pass" type="password" class="input" data-type="password">
+                        <input id="pass" type="password" class="input" data-type="password" name="password">
                     </div>
                     <div class="group">
                         <input id="check" type="checkbox" class="check" checked>
@@ -45,48 +47,51 @@
 
 
                     <div class="group" id="but1">
-                        <input id="but1" type="submit" class="button" value="Sign In with google">
+                        <a id="gp">
+                            <input id="but1" type="submit" class="button" value="Sign In with google">
+                        </a>
                     </div>
 
                     <div class="foot-lnk">
                         <a href="#forgot">Forgot Password? </a>
                     </div>
                     
-
-                <!--
-                    //smaller google button
-
-                    <div class="parent" id="gSignInWrapper">
-                        <div id=customBtn>
-                            <button id="login">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+                    
+                    
+                    <!-- //smaller google button
+                        
+                        <div class="parent" id="gSignInWrapper">
+                            <div id=customBtn>
+                                <button id="login">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
                                     alt="Google logo" width="20">
-                                Sign in
-                            </button>
+                                    Sign in
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                -->
+                    -->
+                    <a class="Logout" style="border: 5px solid teal; border-radius:10px; padding:1vh">Logout</a>
                 </div>
 
-                    <div class="sign-up-htm">
+                    <div class="sign-up-htm signup">
                         <div class="group">
                             <label for="user" class="label">Username</label>
                             <input id="user" type="text" class="input">
                         </div>
                         <div class="group">
-                            <label for="pass" class="label">Password</label>
-                            <input id="pass" type="password" class="input" data-type="password">
+                            <label for="passw" class="label">Password</label>
+                            <input id="passw" type="password" class="input" data-type="password" name="passwords">
                         </div>
                         <div class="group">
-                            <label for="pass" class="label">Repeat Password</label>
-                            <input id="pass" type="password" class="input" data-type="password">
+                            <label for="rpass" class="label">Repeat Password</label>
+                            <input id="rpass" type="password" class="input" data-type="password">
                         </div>
                         <div class="group">
                             <label for="pass" class="label">Email Address</label>
-                            <input id="pass" type="text" class="input">
+                            <input id="pass" type="text" class="input" name="emails">
                         </div>
                         <div class="group">
-                            <input type="submit" class="button" value="Sign Up">
+                            <input type="submit" class="button" value="Sign Up" onclick="checkpassword()">
                         </div>
                         <div class="hr"></div>
                         <div class="foot-lnk">
@@ -95,6 +100,7 @@
                     </div>
                 </div>
             </div>
+        </form>
         </div>
         <script src="bundle.js"></script>
 </body>
