@@ -1,0 +1,93 @@
+{  "monday": {
+    "exercise": {
+      "armcircles": {
+        "armcircles": 0
+      },
+      "pushups": {
+        "pushups": 0
+      },
+      "squats": {
+        "squats": 0
+      }
+    }
+  },
+   "tuesday": {
+    "exercise": {
+      "armcircles": {
+        "armcircles": 0
+      },
+      "pushups": {
+        "pushups": 0
+      },
+      "squats": {
+        "squats": 0
+      }
+    }
+  },
+  "wednesday": {
+    "exercise": {
+      "armcircles": {
+        "armcircles": 0
+      },
+      "pushups": {
+        "pushups": 0
+      },
+      "squats": {
+        "squats": 0
+      }
+    }
+  },
+  "thursday": {
+    "exercise": {
+      "armcircles": {
+        "armcircles": 0
+      },
+      "pushups": {
+        "pushups": 0
+      },
+      "squats": {
+        "squats": 0
+      }
+    }
+  },
+  "friday": {
+    "exercise": {
+      "armcircles": {
+        "armcircles": 0
+      },
+      "pushups": {
+        "pushups": 0
+      },
+      "squats": {
+        "squats": 0
+      }
+    }
+  },
+  
+  "saturday": {
+    "exercise": {
+      "armcircles": {
+        "armcircles": 0
+      },
+      "pushups": {
+        "pushups": 0
+      },
+      "squats": {
+        "squats": 0
+      }
+    }
+  },
+  "sunday": {
+    "exercise": {
+      "armcircles": {
+        "armcircles": 0
+      },
+      "pushups": {
+        "pushups": 0
+      },
+      "squats": {
+        "squats": 0
+      }
+    }
+  }
+}
